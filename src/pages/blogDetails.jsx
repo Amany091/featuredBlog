@@ -33,8 +33,8 @@ const BlogDetails = () => {
                         <img src={blog.image} alt={blog.title} />
                     </div>
                     <h2 className=''>{blog.title}</h2>
-                    <div>
-                        {blog.content && <div className='text-gray-500 text-center md:w-full w-full' dangerouslySetInnerHTML={{__html:blog.content}} ></div>}
+                    <div className=''>
+                        {blog.content && <div className='text-gray-500 text-center' style={{width:'70vw'}} dangerouslySetInnerHTML={{__html:blog.content}} ></div>}
                     </div>
                 </div>
             </div>
