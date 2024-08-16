@@ -64,7 +64,7 @@ const BlogPage = () => {
             <button
               key={blog}
               onClick={() => handleBlogTitleFilter(blog)}
-              className={active === blog || blog.includes(searchParams.get("search" || '') || blog === 'all')  ? 'text-red-300' : ''}
+              className={active === blog || blog.includes(searchParams.get("search" || '').toLowerCase() || blog === 'all')  ? 'text-red-300' : ''}
             >
               {blog}
             </button>
